@@ -31,7 +31,7 @@ var ballX=0,ballY=0;
 var ballSpeedX=1 , ballSpeedY=1 ;
 var paddelA=20,paddelB=250;
 var aScore=0,bScore=0;
-var scoreFx = 0;
+var scoreFx = 0, wonFx=0;
 var paddelBSpeed=1;
 const PADDEL_A_HEIGHT = 100;
 const PADDEL_B_HEIGHT = 100;
@@ -60,7 +60,7 @@ window.onload = function(){
 							paddelA = mousePos.y - PADDEL_A_HEIGHT ;});
 	canvas.addEventListener("click",function(evt){
 							console.log('MouseClicked!');
-							currentScreen='game screen'}, false);
+							currentScreen='game screen';}, false);
 };
 
 //Functions
@@ -96,7 +96,7 @@ function startScreen(){
 	else if(Math.floor(colorWheel  / 255) == 5)
 		{R=255;G=0;B--;}
 	
-	
+	aScore=0; bScore=0; paddelBSpeed=1; ballSpeedX=1; ballSpeedY=1; wonFx=0; scoreFx = 0;
 }
 
 function calculateMousePos(evt){
@@ -122,11 +122,19 @@ function moveEverything(){
 	computerMovment();
 	if(ballX<=12 && ballY >= paddelA && ballY <= (paddelA+PADDEL_A_HEIGHT) && ballSpeedX < 0)
 		{ballSpeedX = -ballSpeedX;console.log('pedalA Hit!');ballSpeedX+=0.1; ballSpeedY+=0.1;paddelBSpeed+=0.04; }//Hit Pedal A
-	else if(ballX>=778 && ballY >= paddelB && ballY <= (paddelB+PADDEL_B_HEIGHT) && ballSpeedX > 0){ballSpeedX = -ballSpeedX;console.log('pedalB Hit!');ballSpeedX-=0.1; ballSpeedY-=0.1;paddelBSpeed+=0.04; }//Hit Pedal B
-	else if((ballX <= 0 && ballSpeedX < 0)){ballSpeedX = -ballSpeedX; ballX = 400; ballY=300;bScore++;console.log(aScore+':'+bScore);scoreFx-=100;ballSpeedX=1; ballSpeedY=1;paddelBSpeed=1; }//B Paddle scored
-	else if(ballX >= 790){ballSpeedX = -ballSpeedX; ballX = 400; ballY=300;aScore++;console.log(aScore+':'+bScore);scoreFx+=100;ballSpeedX=1; ballSpeedY=1; paddelBSpeed=1; }//A Paddle scored
-	else if((ballY  <= 0 && ballSpeedY < 0) || ballY >= 590){ballSpeedY = -ballSpeedY; }//Hit Upper/Lower Border
+	else if(ballX>=778 && ballY >= paddelB && ballY <= (paddelB+PADDEL_B_HEIGHT) && ballSpeedX > 0)
+		{ballSpeedX = -ballSpeedX;console.log('pedalB Hit!');ballSpeedX-=0.1; ballSpeedY-=0.1;paddelBSpeed+=0.04;}//Hit Pedal B
+	else if((ballX <= 0 && ballSpeedX < 0))
+		{ballSpeedX = -ballSpeedX; ballX = 400; ballY=300;bScore++;console.log(aScore+':'+bScore);scoreFx-=100;ballSpeedX=1; ballSpeedY=1;paddelBSpeed=1; }//B Paddle scored
+	else if(ballX >= 790)
+		{ballSpeedX = -ballSpeedX; ballX = 400; ballY=300;aScore++;console.log(aScore+':'+bScore);scoreFx+=100;ballSpeedX=1; ballSpeedY=1; paddelBSpeed=1; }//A Paddle scored
+	else if((ballY  <= 0 && ballSpeedY < 0) || ballY >= 590)
+		{ballSpeedY = -ballSpeedY; }//Hit Upper/Lower Border
+	
 	ballX = ballX + ballSpeedX; ballY = ballY + ballSpeedY;
+	
+	if(aScore>=5){aScore=0; bScore=0; paddelBSpeed=1; ballSpeedX=0.1; ballSpeedY=0.1; wonFx=+500}//You Won!
+	else if(bScore>=5){aScore=0; bScore=0; paddelBSpeed=1; ballSpeedX=0.1; ballSpeedY=0.1; wonFx=-500}//You Lost!
 	}
 	
 function drawEverything(){
@@ -141,18 +149,45 @@ function drawEverything(){
 	canvasContext.fillRect(2,paddelA,10,PADDEL_A_HEIGHT);
 	canvasContext.fillRect(788,paddelB,10,PADDEL_B_HEIGHT );
 	drawBall(ballX,ballY,5,'white');
-	if (scoreFx > 0){
+	if (wonFx > 0){
+		canvasContext.fillStyle = 'black';
+		canvasContext.font = "115px Verdana";
+		canvasContext.fillText("You Won! =)",30,350)
+		canvasContext.fillStyle = 'white';
+		canvasContext.globalAlpha = (wonFx/100)*0.1;
+		wonFx--; 
+		canvasContext.fillStyle = 'white';
+		canvasContext.fillRect(0,0,800,600);
+		canvasContext.globalAlpha = 1;
+		if(wonFx==1)
+			currentScreen='start screen'
+			//aScore=0; bScore=0; paddelBSpeed=1; ballSpeedX=1; ballSpeedY=1; wonFx=0; scoreFx = 0;
+		}
+	else if (wonFx < 0){
+		canvasContext.fillStyle = 'black';
+		canvasContext.font = "115px Verdana";
+		canvasContext.fillText("You Lost ='(",30,350)
+		canvasContext.fillStyle = 'white';
+		canvasContext.globalAlpha = ((-wonFx)/100)*0.1;
+		wonFx++; 
+		canvasContext.fillStyle = 'red';
+		canvasContext.fillRect(0,0,800,600);
+		canvasContext.globalAlpha = 1;
+		if(wonFx==-1)
+			currentScreen='start screen';
+		}
+	else if (scoreFx > 0){
 		canvasContext.fillStyle = 'black';
 		canvasContext.font = "300px Verdana";
 		canvasContext.fillText(aScore+':'+bScore,130,400)
 		canvasContext.fillStyle = 'white';
-		canvasContext.globalAlpha = (scoreFx/10)*0.1;
+		canvasContext.globalAlpha = (scoreFx/100)*0.1;
 		scoreFx--; 
 		canvasContext.fillStyle = 'white';
 		canvasContext.fillRect(0,0,800,600);
 		canvasContext.globalAlpha = 1;
 		}
-	if (scoreFx < 0){
+	else if (scoreFx < 0){
 		canvasContext.fillStyle = 'black';
 		canvasContext.font = "300px Verdana";
 		canvasContext.fillText(aScore+':'+bScore,130,400)
@@ -163,7 +198,9 @@ function drawEverything(){
 		canvasContext.fillRect(0,0,800,600);
 		canvasContext.globalAlpha = 1;
 		}
+
 }
+
 
 function drawBall(ballX,ballY,rad,color){
 	//canvasContext.fillStyle = 'red';
