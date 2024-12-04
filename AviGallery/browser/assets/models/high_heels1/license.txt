@@ -1,0 +1,11 @@
+Model Information:
+* title:	High Heels
+* source:	https://sketchfab.com/3d-models/high-heels-1561c09fc45349d680e48e3e007b64e0
+* author:	cebraVFX (https://sketchfab.com/intervirtual)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "High Heels" (https://sketchfab.com/3d-models/high-heels-1561c09fc45349d680e48e3e007b64e0) by cebraVFX (https://sketchfab.com/intervirtual) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
