@@ -18,7 +18,7 @@ https://maor-ar.github.io/AviGallery/
 # To answer the questions enter:
 https://maor-ar.github.io/datacollector/
 
-# To answer the questions enter:
+# API DEMO:
 https://maor-ar.github.io/apiDemo
 
 
