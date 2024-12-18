@@ -1,0 +1,16 @@
+{
+  "id": "002",
+  "title": {
+    "en": "Custom Jordan 1",
+    "he": "ג'ורדן 1 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Air Jordan 1 with artistic design",
+    "he": "אייר ג'ורדן 1 מצויר ביד בעיצוב אומנותי"
+  },
+  "price": "₪900",
+  "images": [
+    "/images/gallery/002/1.jpg"
+  ],
+  "tags": ["nike", "jordan", "airjordan", "custom", "handpainted"]
+}

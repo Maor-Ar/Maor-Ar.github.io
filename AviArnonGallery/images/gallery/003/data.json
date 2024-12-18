@@ -1,0 +1,16 @@
+{
+  "id": "003",
+  "title": {
+    "en": "Custom Nike Dunk",
+    "he": "נייק דאנק בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Nike Dunk with artistic design",
+    "he": "נייק דאנק מצויר ביד בעיצוב אומנותי"
+  },
+  "price": "₪850",
+  "images": [
+    "/images/gallery/003/1.jpg"
+  ],
+  "tags": ["nike", "dunk", "custom", "handpainted"]
+}

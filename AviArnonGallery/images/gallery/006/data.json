@@ -1,0 +1,16 @@
+{
+  "id": "006",
+  "title": {
+    "en": "Custom Vans",
+    "he": "ואנס בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Vans with colorful design",
+    "he": "ואנס מצויר ביד בעיצוב צבעוני"
+  },
+  "price": "₪700",
+  "images": [
+    "/images/gallery/006/1.jpg"
+  ],
+  "tags": ["vans", "custom", "handpainted", "colorful"]
+}

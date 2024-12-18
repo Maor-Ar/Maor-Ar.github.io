@@ -1,0 +1,16 @@
+{
+  "id": "011",
+  "title": {
+    "en": "Custom Air Max 90",
+    "he": "אייר מקס 90 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Nike Air Max 90 with retro design",
+    "he": "נייק אייר מקס 90 מצויר ביד בעיצוב רטרו"
+  },
+  "price": "₪850",
+  "images": [
+    "/images/gallery/011/1.jpg"
+  ],
+  "tags": ["nike", "airmax90", "custom", "handpainted", "retro"]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "009",
+  "title": {
+    "en": "Custom Jordan 11",
+    "he": "ג'ורדן 11 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Air Jordan 11 with luxury design",
+    "he": "אייר ג'ורדן 11 מצויר ביד בעיצוב יוקרתי"
+  },
+  "price": "₪1000",
+  "images": [
+    "/images/gallery/009/1.jpg"
+  ],
+  "tags": ["nike", "jordan", "airjordan11", "custom", "handpainted", "luxury"]
+}

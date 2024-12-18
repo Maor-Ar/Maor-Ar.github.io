@@ -1,0 +1,16 @@
+{
+  "id": "008",
+  "title": {
+    "en": "Custom Air Force 1 Low",
+    "he": "אייר פורס 1 נמוך בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Nike Air Force 1 Low with modern art design",
+    "he": "נייק אייר פורס 1 נמוך מצויר ביד בעיצוב אמנות מודרנית"
+  },
+  "price": "₪800",
+  "images": [
+    "/images/gallery/008/1.jpg"
+  ],
+  "tags": ["nike", "airforce1", "low", "custom", "handpainted"]
+}

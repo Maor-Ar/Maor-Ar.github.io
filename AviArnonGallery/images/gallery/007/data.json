@@ -1,0 +1,16 @@
+{
+  "id": "007",
+  "title": {
+    "en": "Custom Jordan 3",
+    "he": "ג'ורדן 3 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Air Jordan 3 with urban style",
+    "he": "אייר ג'ורדן 3 מצויר ביד בסגנון אורבני"
+  },
+  "price": "₪900",
+  "images": [
+    "/images/gallery/007/1.jpg"
+  ],
+  "tags": ["nike", "jordan", "airjordan3", "custom", "handpainted"]
+}

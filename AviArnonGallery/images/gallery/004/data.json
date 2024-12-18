@@ -1,0 +1,16 @@
+{
+  "id": "004",
+  "title": {
+    "en": "Custom Air Max",
+    "he": "אייר מקס בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Nike Air Max with unique pattern",
+    "he": "נייק אייר מקס מצויר ביד בדוגמה ייחודית"
+  },
+  "price": "₪850",
+  "images": [
+    "/images/gallery/004/1.jpg"
+  ],
+  "tags": ["nike", "airmax", "custom", "handpainted"]
+}

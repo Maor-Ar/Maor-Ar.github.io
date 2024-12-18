@@ -1,0 +1,16 @@
+{
+  "id": "012",
+  "title": {
+    "en": "Custom Jordan 5",
+    "he": "ג'ורדן 5 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Air Jordan 5 with premium design",
+    "he": "אייר ג'ורדן 5 מצויר ביד בעיצוב פרימיום"
+  },
+  "price": "₪950",
+  "images": [
+    "/images/gallery/012/1.jpg"
+  ],
+  "tags": ["nike", "jordan", "airjordan5", "custom", "handpainted", "premium"]
+}

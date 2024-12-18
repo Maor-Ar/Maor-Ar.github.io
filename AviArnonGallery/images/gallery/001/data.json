@@ -1,0 +1,16 @@
+{
+  "id": "001",
+  "title": {
+    "en": "Custom Air Force 1",
+    "he": "אייר פורס 1 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Nike Air Force 1 with unique design",
+    "he": "נייק אייר פורס 1 מצויר ביד בעיצוב ייחודי"
+  },
+  "price": "₪800",
+  "images": [
+    "/images/gallery/001/1.jpg"
+  ],
+  "tags": ["nike", "airforce1", "custom", "handpainted"]
+}

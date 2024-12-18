@@ -1,0 +1,16 @@
+{
+  "id": "005",
+  "title": {
+    "en": "Custom Jordan 4",
+    "he": "ג'ורדן 4 בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Air Jordan 4 with street art style",
+    "he": "אייר ג'ורדן 4 מצויר ביד בסגנון אמנות רחוב"
+  },
+  "price": "₪950",
+  "images": [
+    "/images/gallery/005/1.jpg"
+  ],
+  "tags": ["nike", "jordan", "airjordan4", "custom", "handpainted"]
+}

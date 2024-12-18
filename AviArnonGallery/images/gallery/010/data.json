@@ -1,0 +1,16 @@
+{
+  "id": "010",
+  "title": {
+    "en": "Custom Converse",
+    "he": "קונברס בעיצוב אישי"
+  },
+  "description": {
+    "en": "Hand-painted Converse with artistic design",
+    "he": "קונברס מצויר ביד בעיצוב אומנותי"
+  },
+  "price": "₪700",
+  "images": [
+    "/images/gallery/010/1.jpg"
+  ],
+  "tags": ["converse", "custom", "handpainted", "artistic"]
+}
