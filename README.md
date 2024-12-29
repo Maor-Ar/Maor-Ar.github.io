@@ -21,4 +21,18 @@ https://maor-ar.github.io/datacollector/
 # API DEMO:
 https://maor-ar.github.io/apiDemo
 
+# AviGallery - three.js + angular attempt:
+https://maor-ar.github.io/AviGallery/
 
+# AviArnonGallery - React full site with active Firebase server 
+completed site
+<br/>
+todo-
+- [ ] Fix photo storage and upload
+- [ ] fix not required price tag
+- [ ] Fix Google Map API
+- [ ] Improve dashboard UI 
+- [ ] add insights to the dashboard (count entries etc)
+- [ ] add a real email to avi
+<br/>
+https://maor-ar.github.io/AviArnonGallery/
